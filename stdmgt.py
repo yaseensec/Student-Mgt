@@ -108,7 +108,7 @@ class Student:
         combo_search.current(0)
         combo_search.grid(row=0,column=1,padx=20,pady=9)
         
-        text_search=tk.Entry(Detail_Frame,textvariable=self.search_text,width=16,font=('times new roman',10,'bold'),bd=0,relief=tk.GROOVE)
+        text_search=tk.Entry(Detail_Frame,textvariable=self.search_text,width=16,font=('times new roman',10,'bold'),bd=0,relief=tk.GROOVE,bg="#262223",fg="White")
         text_search.grid(row=0,column=2,pady=10,padx=20,sticky="w")
         
         searchbtn=tk.Button(Detail_Frame,text="Search",width=6,pady=5,command=self.search_data,bg="#262223",fg="#DDC6B6",activebackground="#DDC6B6")
